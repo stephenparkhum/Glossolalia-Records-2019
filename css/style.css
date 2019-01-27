@@ -1,0 +1,75 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "side_nav main_content main_content main_content main_content right_""side_nav main_content main_content main_content main_content right_""side_nav main_content main_content main_content main_content right_";
+}
+
+.side_nav {
+    grid-area: side_nav;
+    text-align: center;
+    width: 55%;
+}
+
+.side_nav ul {
+    list-style: none;
+}
+
+.side_nav .gr-side-logo {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.side_nav ul li {
+    text-transform: lowercase;
+    padding-bottom: 1px;
+    font-size: 1.35em;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 10%;
+
+}
+
+.side_nav ul li:first-child {
+    padding-top: 25px;
+}
+
+.main_content {
+    grid-area: main_content;
+}
+
+.right_ {
+    grid-area: right_;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* RECENT EXCRETIONS */
+.recent {
+    width: 100%;
+    text-align: center;
+}
+
+.recent h1 {
+    text-transform: uppercase;
+    font-size: 1.55em;
+}
+
+.recent ul li {
+    text-decoration: none;
+    list-style: none;
+    align-content: center;
+}
+
+.recent ul li img {
+    width: 100px;
+    border: 1px solid white;
+    display: inline-block;
+}
