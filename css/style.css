@@ -4,6 +4,11 @@
     src: url("/resources/fonts/trado.ttf");
 }
 
+:root {
+    --main-dark: black;
+    --dark-grey: rgb(65, 65, 65);
+}
+
 html {
     font-family: trad;
     color: white;
@@ -88,6 +93,11 @@ body h1 {
     width: 100%;
 }
 
+.artist_title h1 {
+    padding: 20px;
+}
+
+
 /* RECENT EXCRETIONS */
 .recent {
     padding-top: -25px;
@@ -97,7 +107,6 @@ body h1 {
 
 .recent h1 {
     text-align: center;
-    padding: 10px;
 }
 
 .recent ul li {
@@ -181,7 +190,7 @@ body h1 {
 }
 
 .artist_list img {
-    border: 1px solid white;
+    border: 1px solid var(--dark-grey);
     width: 125px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -270,23 +279,29 @@ p .artist-bio {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.747);
     /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #000000;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
+    border: 2px solid var(--dark-grey);
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.3s;
+}
+
+.modal-content ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Add Animation */
@@ -324,24 +339,30 @@ p .artist-bio {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: var(--dark-grey);
     text-decoration: none;
     cursor: pointer;
 }
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: var(--main-dark);
     color: white;
 }
 
 .modal-body {
     padding: 2px 16px;
+    background-color: var(--main-dark);
 }
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: var(--main-dark);
     color: white;
 }
 
+.modal-footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
