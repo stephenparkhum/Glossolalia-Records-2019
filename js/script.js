@@ -10,6 +10,8 @@ let artistsClick = function () {
         }
         let artistsPages = document.getElementsByClassName('artists_page');
         artistsPages[0].style.display = 'block';
+        let eventPages = document.getElementsByClassName('events-page');
+        eventPages[0].style.display = 'none';
 
 
     });
@@ -29,6 +31,10 @@ let newsClick = function () {
         }
         let artistsPages = document.getElementsByClassName('recent');
         artistsPages[0].style.display = 'block';
+        let eventPages = document.getElementsByClassName('events-page');
+        eventPages[0].style.display = 'none';
+        let contactPages = document.getElementsByClassName('contacts-page');
+        contactPages.style.display = "none";
 
     });
 };
@@ -47,6 +53,27 @@ let eventsClick = function () {
         }
         let eventsPage = document.getElementsByClassName("events-page");
         eventsPage[0].style.display = 'block';
+        let contact = document.getElementsByClassName('contacts-page');
+        contact.style.display = "none";
+    });
+};
+
+// CONTACTS PAGE
+let contactsClick = function () {
+    let contacts_nav = document.getElementById('contact-nav');
+    contacts_nav.addEventListener('click', function () {
+        let contact = document.getElementsByClassName('contacts-page');
+        contact.style.display = "block";
+        let elem = document.getElementsByClassName('recent');
+        elem[0].style.display = "none";
+        let artists = document.getElementsByClassName('artists_page');
+        artists[0].style.display = 'none';
+        let news = document.getElementsByClassName('news');
+        for (i = 0; i < news.length; i++) {
+            news[i].style.display = 'none';
+        }
+        let eventsPage = document.getElementsByClassName("events-page");
+        eventsPage[0].style.display = 'none';
     });
 };
 
@@ -55,6 +82,7 @@ const mainDiv = document.getElementsByClassName('main');
 artistsClick();
 newsClick();
 eventsClick();
+contactsClick();
 
 
 
