@@ -417,15 +417,35 @@ p .artist-bio {
 /* CONTACTS PAGE */
 .contacts-page {
     display: none;
+    padding-top: -25px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-main {
+    padding-top: 30px;
+}
+
+.contact-main a:hover {
+    text-decoration: underline;
 }
 
 
 
 /* MAILING LIST */
 .mailing-list {
-    border: 1px solid white;
-    background-color: black;
     width: 100px;
     text-align: center;
-    padding: 5px;
+    padding: 1px;
+    margin-top: 17px;
+    padding-left: 50px;
+}
+
+.mailing-list h4 {
+    padding: 0;
+    margin: 5px;
+}
+
+.mailing-icon {
+    width: 35px;
 }

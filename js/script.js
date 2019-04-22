@@ -1,3 +1,11 @@
+// SHOW / HIDE FUNCTIONS
+
+
+
+
+
+
+
 // ARTISTS PAGE
 let artistsClick = function () {
     let artists_link = document.getElementById('artists');
@@ -12,6 +20,8 @@ let artistsClick = function () {
         artistsPages[0].style.display = 'block';
         let eventPages = document.getElementsByClassName('events-page');
         eventPages[0].style.display = 'none';
+        let contactsPage = document.getElementsByClassName("contacts-page");
+        contactsPage[0].style.display = 'none';
 
 
     });
@@ -34,7 +44,7 @@ let newsClick = function () {
         let eventPages = document.getElementsByClassName('events-page');
         eventPages[0].style.display = 'none';
         let contactPages = document.getElementsByClassName('contacts-page');
-        contactPages.style.display = "none";
+        contactPages[0].style.display = "none";
 
     });
 };
@@ -54,7 +64,7 @@ let eventsClick = function () {
         let eventsPage = document.getElementsByClassName("events-page");
         eventsPage[0].style.display = 'block';
         let contact = document.getElementsByClassName('contacts-page');
-        contact.style.display = "none";
+        contact[0].style.display = "none";
     });
 };
 
@@ -63,14 +73,14 @@ let contactsClick = function () {
     let contacts_nav = document.getElementById('contact-nav');
     contacts_nav.addEventListener('click', function () {
         let contact = document.getElementsByClassName('contacts-page');
-        contact.style.display = "block";
+        contact[0].style.display = "block";
         let elem = document.getElementsByClassName('recent');
         elem[0].style.display = "none";
         let artists = document.getElementsByClassName('artists_page');
-        artists[0].style.display = 'none';
+        artists[0].style.display = "none";
         let news = document.getElementsByClassName('news');
         for (i = 0; i < news.length; i++) {
-            news[i].style.display = 'none';
+            news[i].style.display = "none";
         }
         let eventsPage = document.getElementsByClassName("events-page");
         eventsPage[0].style.display = 'none';
@@ -110,11 +120,15 @@ btn.onclick = function () {
     // let p = document.createElement('p');
     // var artistName = document.getElementsByClassName('artist-name');
     // modal.appendChild(pInner);
+    let mailingList = document.getElementsByClassName('mailing-list');
+    mailingList[0].style.display = "none";
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
+    let mailingList = document.getElementsByClassName('mailing-list');
+    mailingList[0].style.display = "block";
 };
 
 // When the user clicks anywhere outside of the modal, close it
