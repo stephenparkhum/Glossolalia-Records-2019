@@ -25,7 +25,8 @@ html {
 .side_nav {
     grid-area: side_nav;
     text-align: center;
-    width: 55%;
+    width: 10%;
+    position: fixed;
 }
 
 .side_nav ul {
@@ -34,8 +35,12 @@ html {
 }
 
 .side_nav .gr-side-logo {
-    width: 150px;
+    width: 135px;
     padding-left: 10px;
+}
+
+.side_nav a .gr-side-logo {
+    width: 135px;
 }
 
 a {
@@ -45,20 +50,21 @@ a {
 
 .side_nav a:hover {
     text-decoration: underline;
+
 }
 
 .side_nav ul li {
     text-transform: lowercase;
     padding-bottom: 1px;
     font-size: 1.35em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
-    padding-left: 10%;
+    padding-left: 0px;
 
 }
 
 .side_nav ul li:first-child {
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .main_content {
@@ -119,8 +125,7 @@ body h1 {
     list-style: none;
     align-content: center;
     display: inline-block;
-    padding-right: 20px;
-
+    padding: 10px;
 }
 
 .recent ul li img {
@@ -412,4 +417,15 @@ p .artist-bio {
 /* CONTACTS PAGE */
 .contacts-page {
     display: none;
+}
+
+
+
+/* MAILING LIST */
+.mailing-list {
+    border: 1px solid white;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
 }
