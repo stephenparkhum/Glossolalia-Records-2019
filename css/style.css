@@ -449,3 +449,14 @@ p .artist-bio {
 .mailing-icon {
     width: 35px;
 }
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    padding-top: 50px;
+    font-size: .75rem;
+    text-align: center;
+    height: 35px;
+    vertical-align: middle;
+}
