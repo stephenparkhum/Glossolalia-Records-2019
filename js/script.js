@@ -1,6 +1,32 @@
+// GLOBAL FUNCS / VARIABLES
+const mainDiv = document.getElementsByClassName('main');
+
+
+
 // SHOW / HIDE FUNCTIONS
 
 
+// -- ARTISTS --
+let artistShow = () => {
+    let artistsPages = document.getElementsByClassName('artists_page');
+    artistsPages[0].style.display = 'block';
+};
+
+let artistHide = () => {
+    let elem = document.getElementsByClassName('artists_page');
+    elem[0].style.display = 'none';
+};
+
+// -- EVENTS --
+let eventsShow = () => {
+    let eventPages = document.getElementsByClassName('events-page');
+    eventPages[0].style.display = 'block';
+};
+
+let eventsHide = () => {
+    let eventPages = document.getElementsByClassName('events-page');
+    eventPages[0].style.display = 'none';
+};
 
 
 
@@ -22,8 +48,8 @@ let artistsClick = function () {
         eventPages[0].style.display = 'none';
         let contactsPage = document.getElementsByClassName("contacts-page");
         contactsPage[0].style.display = 'none';
-
-
+        let textiles = document.getElementsByClassName("textiles-page");
+        textiles[0].style.display = "none";
     });
 };
 
@@ -45,6 +71,8 @@ let newsClick = function () {
         eventPages[0].style.display = 'none';
         let contactPages = document.getElementsByClassName('contacts-page');
         contactPages[0].style.display = "none";
+        let textilePages = document.getElementsByClassName('textiles-page');
+        textilePages[0].style.display = "none";
 
     });
 };
@@ -56,13 +84,36 @@ let eventsClick = function () {
         let elem = document.getElementsByClassName('recent');
         elem[0].style.display = "none";
         let artists = document.getElementsByClassName('artists_page');
-        artists[0].style.display = 'none';
+        artists[0].style.display = "none";
         let news = document.getElementsByClassName('news');
         for (i = 0; i < news.length; i++) {
-            news[i].style.display = 'none';
+            news[i].style.display = "none";
         }
         let eventsPage = document.getElementsByClassName("events-page");
         eventsPage[0].style.display = 'block';
+        let contact = document.getElementsByClassName('contacts-page');
+        contact[0].style.display = "none";
+        let textiles = document.getElementsByClassName("textiles-page");
+        textiles[0].style.display = "none";
+    });
+};
+
+// TEXTILES PAGE
+let textilesClick = function () {
+    let textiles_nav = document.getElementById("textiles-nav");
+    textiles_nav.addEventListener('click', function () {
+        let elem = document.getElementsByClassName('recent');
+        elem[0].style.display = "none";
+        let artists = document.getElementsByClassName('artists_page');
+        artists[0].style.display = "none";
+        let news = document.getElementsByClassName('news');
+        for (i = 0; i < news.length; i++) {
+            news[i].style.display = "none";
+        }
+        let eventsPage = document.getElementsByClassName("events-page");
+        eventsPage[0].style.display = 'none';
+        let textiles = document.getElementsByClassName("textiles-page");
+        textiles[0].style.display = "block";
         let contact = document.getElementsByClassName('contacts-page');
         contact[0].style.display = "none";
     });
@@ -84,19 +135,16 @@ let contactsClick = function () {
         }
         let eventsPage = document.getElementsByClassName("events-page");
         eventsPage[0].style.display = 'none';
+        let textiles = document.getElementsByClassName("textiles-page");
+        textiles[0].style.display = "none";
     });
 };
-
-const mainDiv = document.getElementsByClassName('main');
 
 artistsClick();
 newsClick();
 eventsClick();
 contactsClick();
-
-
-
-
+textilesClick();
 
 
 // BUTTON / POP-UP
