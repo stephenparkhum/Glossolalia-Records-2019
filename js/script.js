@@ -6,7 +6,7 @@ const mainDiv = document.getElementsByClassName('main');
 // SHOW / HIDE FUNCTIONS
 
 
-// -- ARTISTS --
+// -- ARTISTS SHOW/HIDE--
 let artistShow = () => {
     let artistsPages = document.getElementsByClassName('artists_page');
     artistsPages[0].style.display = 'block';
@@ -16,19 +16,6 @@ let artistHide = () => {
     let elem = document.getElementsByClassName('artists_page');
     elem[0].style.display = 'none';
 };
-
-// -- EVENTS --
-let eventsShow = () => {
-    let eventPages = document.getElementsByClassName('events-page');
-    eventPages[0].style.display = 'block';
-};
-
-let eventsHide = () => {
-    let eventPages = document.getElementsByClassName('events-page');
-    eventPages[0].style.display = 'none';
-};
-
-
 
 
 
@@ -44,12 +31,8 @@ let artistsClick = function () {
         }
         let artistsPages = document.getElementsByClassName('artists_page');
         artistsPages[0].style.display = 'block';
-        let eventPages = document.getElementsByClassName('events-page');
-        eventPages[0].style.display = 'none';
         let contactsPage = document.getElementsByClassName("contacts-page");
         contactsPage[0].style.display = 'none';
-        let textiles = document.getElementsByClassName("textiles-page");
-        textiles[0].style.display = "none";
     });
 };
 
@@ -67,55 +50,9 @@ let newsClick = function () {
         }
         let artistsPages = document.getElementsByClassName('recent');
         artistsPages[0].style.display = 'block';
-        let eventPages = document.getElementsByClassName('events-page');
-        eventPages[0].style.display = 'none';
         let contactPages = document.getElementsByClassName('contacts-page');
         contactPages[0].style.display = "none";
-        let textilePages = document.getElementsByClassName('textiles-page');
-        textilePages[0].style.display = "none";
 
-    });
-};
-
-// EVENTS PAGE
-let eventsClick = function () {
-    let events_nav = document.getElementById('events-nav');
-    events_nav.addEventListener('click', function () {
-        let elem = document.getElementsByClassName('recent');
-        elem[0].style.display = "none";
-        let artists = document.getElementsByClassName('artists_page');
-        artists[0].style.display = "none";
-        let news = document.getElementsByClassName('news');
-        for (i = 0; i < news.length; i++) {
-            news[i].style.display = "none";
-        }
-        let eventsPage = document.getElementsByClassName("events-page");
-        eventsPage[0].style.display = 'block';
-        let contact = document.getElementsByClassName('contacts-page');
-        contact[0].style.display = "none";
-        let textiles = document.getElementsByClassName("textiles-page");
-        textiles[0].style.display = "none";
-    });
-};
-
-// TEXTILES PAGE
-let textilesClick = function () {
-    let textiles_nav = document.getElementById("textiles-nav");
-    textiles_nav.addEventListener('click', function () {
-        let elem = document.getElementsByClassName('recent');
-        elem[0].style.display = "none";
-        let artists = document.getElementsByClassName('artists_page');
-        artists[0].style.display = "none";
-        let news = document.getElementsByClassName('news');
-        for (i = 0; i < news.length; i++) {
-            news[i].style.display = "none";
-        }
-        let eventsPage = document.getElementsByClassName("events-page");
-        eventsPage[0].style.display = 'none';
-        let textiles = document.getElementsByClassName("textiles-page");
-        textiles[0].style.display = "block";
-        let contact = document.getElementsByClassName('contacts-page');
-        contact[0].style.display = "none";
     });
 };
 
@@ -133,18 +70,12 @@ let contactsClick = function () {
         for (i = 0; i < news.length; i++) {
             news[i].style.display = "none";
         }
-        let eventsPage = document.getElementsByClassName("events-page");
-        eventsPage[0].style.display = 'none';
-        let textiles = document.getElementsByClassName("textiles-page");
-        textiles[0].style.display = "none";
     });
 };
 
 artistsClick();
 newsClick();
-eventsClick();
 contactsClick();
-textilesClick();
 
 
 // BUTTON / POP-UP
@@ -161,22 +92,17 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
     modal.style.display = "block";
-    let modalHeader = modal.getElementsByClassName('modal-header');
-    let header = modal.getElementsByClassName('artist-name');
-    header.textContent = 'Fuck you';
-    // modalHeader.appendChild(h2);
-    // let p = document.createElement('p');
-    // var artistName = document.getElementsByClassName('artist-name');
-    // modal.appendChild(pInner);
-    let mailingList = document.getElementsByClassName('mailing-list');
-    mailingList[0].style.display = "none";
+    // let modalHeader = modal.getElementsByClassName('modal-header');
+    // let header = modal.getElementsByClassName('artist-name');
+    // header.textContent = 'Fuck you';
+
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
-    let mailingList = document.getElementsByClassName('mailing-list');
-    mailingList[0].style.display = "block";
+    // let mailingList = document.getElementsByClassName('mailing-list');
+    // mailingList[0].style.display = "block";
 };
 
 // When the user clicks anywhere outside of the modal, close it

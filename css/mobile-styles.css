@@ -1,0 +1,136 @@
+:root {
+    --main-dark: black;
+    --dark-grey: rgb(65, 65, 65);
+    --light-grey: rgb(110, 110, 110);
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    /* NAVIGATION */
+    .side_nav {
+        display: none;
+    }
+
+
+    .side_nav .gr-side-logo {
+        width: 50px;
+        padding-left: 10px;
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+        font-size: 1.35rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* RECENT */
+
+    .recent {
+        text-align: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .recent h1 {
+        font-size: 1rem;
+    }
+
+    .recent ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .recent ul li {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .recent ul li img {
+        width: 50px;
+        border: 1px solid white;
+
+    }
+
+    .recent-album-title {
+    font-size: .75rem;
+}
+
+    .recent-artist-name {
+        color: var(--light-grey);
+        font-size: .65rem;
+    }
+
+
+
+
+    /* NEWS */
+    .news h2 {
+        letter-spacing: 1px;
+        padding: 0 0;
+        margin: 0;
+        font-size: 1.15rem;
+    }
+    
+    .news .blurb {
+        font-size: .35rem;
+    }
+
+    /* GENERAL RULES */
+    .mobile-hide {
+        display: none;
+    }
+
+
+    .mobile-nav {
+        display: block;
+        color: black;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid var(--main-dark);
+        background-color: var(--dark-grey);
+        font-size: 1.65rem;
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        height: 35px;
+        left: -1px;
+        border-bottom: 1px solid var(--dark-grey);
+    }
+
+    .mobile-nav ul {
+        padding-left: 0;
+        width: 100%;
+        margin: 0 auto;
+        color: black;
+
+    }
+
+    .mobile-nav li {
+        display: inline-block;
+        list-style: none;
+        border-right: 1px solid var(--main-dark);
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+ 
+    }    
+
+    .mobile-nav li a {
+        color: black;
+    }
+
+    .mobile-nav ul li:last-child {
+        border: 0;
+        padding-left: 15px;
+    }
+}

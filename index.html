@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-styles.css">
     <title>Glossolalia Records</title>
 </head>
 
 <body>
     <div class="grid-container">
+        <!-- ------------ NAVIGATION ------------- -->
         <div class="side_nav">
             <a href="index.html"><img class="gr-side-logo"
                     src="images/logos/GR Emblem & Logo, 600 dpi SMALL_WHITE.png"></a>
 
 
-            <!-- ------------ NAVIGATION ------------- -->
+
             <ul>
                 <li id="news-nav"><a href="#">news</a></li>
                 <li id="artists"><a href="#">artists</a></li>
-                <li id="events-nav"><a href="#">events</a></li>
-                <li id="textiles-nav"><a href="#">textiles</a></li>
                 <li id="store-nav"><a href="http://glossolaliarecords.bandcamp.com" target="_blank">store</a></li>
                 <li id="contact-nav"><a href="#">contact</a></li>
             </ul>
@@ -31,7 +31,7 @@
         <!-- -------- MAIN WRAPPER SECTION ------------- -->
         <div class="main_content">
             <div class="main_in_wrapper">
-
+                <h1 class="mobile-title">glossolalia records</h1>
 
                 <!-- ---------------- ARSTIST PAGE ------------------ -->
                 <div class="artists_page">
@@ -98,58 +98,59 @@
                     </table>
                 </div>
 
+
+                <!-- POP OUT MODAL -->
                 <div id="myModal" class="modal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modal-header">
                             <span class="close">&times;</span>
-                            <h1>Gash</h1>
+
                         </div>
                         <div class="modal-body">
                             <img src="/images/artists/GASH.jpg" class="artist-logo">
-                            <br /><span class="artist-genre">Death Metal</span>
-                            <br /><br>
                             <div class="artist-bio-popup">
-                                <h3>Bio:</h3>
-                                <p class="artist-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                    aspernatur soluta magnam, nam eligendi eos, quisquam excepturi inventore explicabo
-                                    quam
-                                    nisi sed. Eius, omnis dicta? Sint sed nisi natus a.</p>
-                                <br />
-                                <h3>Releases:</h3>
-                                <table class="artist-releases">
-                                    <tr>
-                                        <td><img src="/images/artists/GASH.jpg">
-                                            <br />
-                                            <p class="album-title">Crossing the Lugubrious Plateau</p>
-                                        </td>
-                                    </tr>
-                                </table>
+                                <div class="modal-bio">
+                                    <h1>Gash</h1>
+                                    <span class="artist-genre">Death Metal</span><br />
+                                    <h3>Bio:</h3>
+                                    <p class="artist-bio">two death movements run through with the sinew of twisted, nerveless heaving. dionysian cum upon the gash.<br /><br />
+                                    INK OF INTERMINABLE NIGHT
+                                    SMEARED ACROSS OUR MOUTHS</p>
+                                    <div class="artist-releases-div">
+                                        <h3>Releases:</h3>
+                                        <table class="artist-releases">
+                                            <tr>
+                                                <td><a href="https://glossolaliarecords.bandcamp.com/album/crossing-the-lugubrious-plateau" target="_blank"><img src="/images/artists/GASH.jpg">
+                                                    <br />
+                                                    <p class="album-title">Crossing the Lugubrious Plateau</p></a>
+                                                </td>
+                                                <td><img src="/images/artists/GASH.jpg">
+                                                    <br />
+                                                    <p class="album-title">Crossing the Lugubrious Plateau</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    <!-- <div class="artist-popup-social">
+                                        <h3 class="">Social Media:</h3>
+                                        <img src="/images/logos/Bandcamp-button-bc-circle-black_SMALL.png" class="artist-social-bc">
+                                        <img src="/images/logos/MA_logo.jpg" class="artist-social">
+                                    </div> -->
+
+                                </div>
+
 
                             </div>
 
-                            <h3 class="">Social Media:</h3>
-                            <img src="/images/logos/Bandcamp-button-bc-circle-black_SMALL.png" class="artist-social-bc">
-                            <img src="/images/logos/MA_logo.jpg" class="artist-social">
-                        </div>
-                        <div class="modal-footer">
-                            <h4>Social Media</h4>
-                            <ul>
-                                <li>Facebook</li>
-                                <li>Twitter</li>
-                                <li>Instagram</li>
-                            </ul>
+
                         </div>
                     </div>
 
                 </div>
-
-
-
-
                 <!-- ---------------- /ARSTIST PAGE ------------------ -->
-
 
 
                 <!-- --------------- RECENT --------------- -->
@@ -161,11 +162,13 @@
                                     class="recent-album-title">Cowardice / Grst</span><br /><span
                                     class="recent-artist-name">Cowardice / Grst</span></a>
                         </li>
+
                         <li>
-                        <li><a href="https://glossolaliarecords.bandcamp.com/album/jurassic" target="_blank"><img
+                            <a href="https://glossolaliarecords.bandcamp.com/album/jurassic" target="_blank"><img
                                     src="https://f4.bcbits.com/img/a1119256891_10.jpg" alt="Thecodontian"><br /><span
                                     class="recent-album-title">Jurassic</span><br /><span
-                                    class="recent-artist-name">Thecodontion</span></li></a>
+                                    class="recent-artist-name">Thecodontion</span></a>
+                        </li>
                         <li>
                             <a href="https://glossolaliarecords.bandcamp.com/album/frothing-to-betray-limbs"
                                 target="_blank">
@@ -174,6 +177,9 @@
                                     Betray Limbs</span><br /><span class="recent-artist-name">Lodge of the Empty
                                     Bed</span>
                             </a>
+
+                        </li>
+
                     </ul>
 
                 </div>
@@ -184,8 +190,6 @@
 
                 <!-- -------------- NEWS -------------- -->
                 <div class="news">
-                    <h1>News</h1>
-
                     <h2>Cowardice / Grst Split Tape</h2>
                     <p class="date">5/1/2019</p>
                     <p class="blurb">
@@ -207,20 +211,32 @@
                     </p>
                 </div>
                 <div class="news">
-                    <h2>News Item</h2>
+                    <h2>Thecodontion - Jurassic 7"</h2>
                     <p class="date">9/18/2018</p>
                     <p class="blurb">
-                        <div class="30">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum inventore
-                            sint earum accusantium voluptas provident, nemo libero beatae aspernatur sunt soluta,
-                            exercitationem quos non natus adipisci, molestiae consequuntur aliquid doloribus!<br /><br />
-                        <iframe style="border: 0; width: 50%; height: 42px;"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=4112842504/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/"
-                            seamless><a href="http://glossolaliarecords.bandcamp.com/album/jurassic">Jurassic by Thecodontion</a></iframe>
-                        
+                        <div class="30">"JURASSIC" is Thecodontion’s second expulsion following the band's debut,
+                            "Thecodontia," last year on Gravlass
+                            Propaganda. As the title would suggest, this EP is conceptually centered around four
+                            prehistoric creatures that lived in
+                            the Jurassic period.
+                            <br /><br />
+                            Side A concerns two Pterosaurs (the so-called 'flying dinosaurs,' such as pterodactyls),
+                            while Side B treats with
+                            Sauropods (literally ‘lizard-footed’, large dinosaurs with long necks, small heads, thick
+                            legs, and long tails, such as
+                            the brontosaurus or brachiosaurus).
+                            <br /><br />
+                            GR is proud to present this ripper in collaboration with Wooaaargh and Xenoglossy
+                            Productions.<br /><br />
+                            <iframe class="mobile-hide" style="border: 0; width: 50%; height: 42px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=4112842504/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/"
+                                seamless><a href="http://glossolaliarecords.bandcamp.com/album/jurassic">Jurassic by
+                                    Thecodontion</a></iframe>
+
                         </div>
                     </p>
                 </div>
-                <div class="news">
+                <div class="news mobile-hide">
                     <h2>News Item</h2>
                     <p class="date">9/18/2018</p>
                     <p class="blurb">
@@ -230,127 +246,60 @@
                     </p>
                 </div>
                 <!-- -------------- /NEWS -------------- -->
+                <div class="right_">
+                    <a href="https://bandcamp.us3.list-manage.com/subscribe?u=43688492c5e06627ae0d05414&id=5df6c81a54"
+                        target="_blank">
+                        <div class="mailing-list">
+                            <img class="mailing-icon" src="/images/icons/mail.png">
+                            <h4>Mailing List</h4>
+                            <ul>
+                                <li class="social-icon">Facebook</li>
+                                <li class="social-icon">Instagram</li>
+                                <li class="social-icon">Bandcamp</li>
+                            </ul>
+                        </div>
 
+                    </a>
+                </div>
 
-
-
-
-
-                <!-- ------------- EVENTS ------------ -->
-                <div class="events-page">
-                    <h1 class="event-header">Events</h1>
-                    <div class="events-main">
-                        <p>TEST TEXT INFO</p>
-                        <table>
-                            <tr>
-                                <td>
-                                    <h2>Event 1</h2>
-                                </td>
-                                <td>
-                                    <h2>Event 2</h2>
-                                </td>
-                                <td>
-                                    <h2>Event 3</h2>
-                                </td>
-                            </tr>
-                        </table>
+                <!-- CONTACT PAGE -->
+                <div class="contacts-page">
+                    <h1 class="contact-header">CONTACT US</h1>
+                    <div class="contact-main">
+                        <h2>Demos:</h2>
+                        <p>For all demo inquiries please email an EPK to us here: <br />
+                            <a href="mailto:glossolaliarecords+demos@gmail.com">glossolaliarecords+demos@gmail.com</a>
+                        </p>
+                        <br />
+                        <h2>General Contact:</h2>
+                        <p>
+                            For all other inquiries please email us here: <br />
+                            <a href="mailto:glossolaliarecords@gmail.com">glossolaliarecords@gmail.com</a>
+                        </p>
 
 
                     </div>
-
-
                 </div>
 
-
-
-
-
-
-
-                <!-- ------------- /EVENTS ------------ -->
+                <!-- RIGHT  -->
             </div>
-
-
-
-
-            <!-- ------------- TEXTILES ------------ -->
-            <div class="textiles-page">
-                <h1 class="textiles-header">Textiles</h1>
-                <div class="textile-body">
-                    <table class="textile-table">
-                        <tr>
-                            <td><img class="textile-img" src="images/textiles/LOTEB - O Heart of Confinement.jpg"></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-            <!-- CONTACT PAGE -->
-            <div class="contacts-page">
-                <h1 class="contact-header">CONTACT US</h1>
-                <div class="contact-main">
-                    <h2>Demos:</h2>
-                    <p>For all demo inquiries please email an EPK to us here: <br />
-                        <a href="mailto:glossolaliarecords+demos@gmail.com">glossolaliarecords+demos@gmail.com</a></p>
-                    <br />
-                    <h2>General Contact:</h2>
-                    <p>
-                        For all other inquiries please email us here: <br />
-                        <a href="mailto:glossolaliarecords@gmail.com">glossolaliarecords@gmail.com</a>
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-
-
-
-
-
-
-            <!-- ------------- /CONTACT PAGE ------------ -->
-
-
-
-
-
-        </div>
-        <div class="right_">
-            <a href="https://bandcamp.us3.list-manage.com/subscribe?u=43688492c5e06627ae0d05414&id=5df6c81a54"
-                target="_blank">
-                <div class="mailing-list">
-                    <img class="mailing-icon" src="/images/icons/mail.png">
-                    <h4>Mailing List</h4>
-                </div>
-
-            </a>
         </div>
 
-        <!-- FOOTER -->
 
     </div>
-    <div class="footer">
-        <footer>
-            <p>Glossolalia Records &copy;2019</p>
-        </footer>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav">
+        <ul>
+            <li id="news-nav"><a href="#">news</a></li>
+            <li id="artists"><a href="#">artists</a></li>
+            <li><a href="http://glossolaliarecords.bandcamp.com">store</a></li>
+            <li><a href="mailto:glossolaliarecords@gmail.com" target="_top">contact</a></li>
+        </ul>
     </div>
+
+
+
     <script src='./js/script.js'></script>
     <script src="./js/artist.js"></script>
 </body>
