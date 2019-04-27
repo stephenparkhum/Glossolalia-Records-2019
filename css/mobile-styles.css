@@ -133,4 +133,8 @@
         border: 0;
         padding-left: 15px;
     }
+
+    .mailing-list {
+        display: none;
+    }
 }
