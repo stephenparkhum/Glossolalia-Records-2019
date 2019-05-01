@@ -8,6 +8,6 @@
         <li>CSS</li>
         <li>JavaScript</li>
     </ul><br /><br />
-    <strong>Live Date:</strong> 5/1/2019</strong><br />
+    <strong>Live Site: 
     <a href="http://glossolaliarecords.com">Glossolalia Records</a>
 </p>
