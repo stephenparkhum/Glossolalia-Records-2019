@@ -167,6 +167,7 @@
 
     .artists_mobile img {
         width: 150px;
+        border: 1px solid white;
     }
 
     .genre-mobile {
