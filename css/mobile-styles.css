@@ -137,4 +137,44 @@
     .mailing-list {
         display: none;
     }
+
+
+    /* ARTISTS MOBILE */
+
+    .artists_mobile {
+        background-color: black;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .artists_mobile h1 {
+        text-transform: uppercase;
+        font-size: 1.55em;
+        text-align: center;
+        padding: 0 auto;
+    }
+
+    .artists_mobile .artist_list {
+        width: 80% auto;
+        text-align: center;
+    }
+
+    .artists_mobile .artist_list table {
+        margin: 0 auto;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .artists_mobile img {
+        width: 150px;
+    }
+
+    .genre-mobile {
+        font-size: .55rem;
+    }
+
+    .sophos-name {
+        font-size: 1.45rem;
+    }
 }
+
