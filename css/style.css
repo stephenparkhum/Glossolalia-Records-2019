@@ -239,7 +239,6 @@ body h1 {
 .artist_list td {
     padding: 30px;
     text-align: center;
-    width: 100%;
     margin: 5px;
 }
 
@@ -549,7 +548,9 @@ MODAL STYLING
     margin-top: 17px;
     padding-left: 20px;
     top: 0;
+    right: 35px;
     display: block;
+    position: fixed;
 }
 
 .mailing-list h4 {
