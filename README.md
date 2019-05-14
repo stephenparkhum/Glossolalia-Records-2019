@@ -2,10 +2,10 @@
 
 
 
-###Tech Stack:
+### Tech Stack:
 * HTML
 * CSS
 * JavaScript
 
-###Live Site: 
+### Live Site: 
 [Glossolalia Records](http://glossolaliarecords.com)
