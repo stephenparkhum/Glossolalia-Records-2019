@@ -7,15 +7,15 @@ const mainDiv = document.getElementsByClassName('main');
 
 
 // -- ARTISTS SHOW/HIDE--
-let artistShow = () => {
-    let artistsPages = document.getElementsByClassName('artists_page');
-    artistsPages[0].style.display = 'block';
-};
+// let artistShow = () => {
+//     let artistsPages = document.getElementsByClassName('artists_page');
+//     artistsPages[0].style.display = 'block';
+// };
 
-let artistHide = () => {
-    let elem = document.getElementsByClassName('artists_page');
-    elem[0].style.display = 'none';
-};
+// let artistHide = () => {
+//     let elem = document.getElementsByClassName('artists_page');
+//     elem[0].style.display = 'none';
+// };
 
 
 

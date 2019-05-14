@@ -17,6 +17,7 @@ html {
 
 
 .grid-container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -160,11 +161,19 @@ body h1 {
     font-size: .85rem;
 }
 
+.news .web-hide {
+    display: none;
+}
+
+.web-hide {
+    display: none;
+}
+
 /* NEWS */
 .news {
     padding-top: 20px;
     text-align: center;
-    border-top: 1px solid var(--dark-grey);
+    /* border-top: 1px solid var(--dark-grey); */
     padding-bottom: 15px;
 }
 
@@ -188,6 +197,10 @@ body h1 {
 
 .news a {
     text-decoration: underline;
+}
+
+.blurb img {
+    width: 100px;
 }
 
 

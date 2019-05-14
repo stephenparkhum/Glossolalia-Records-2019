@@ -22,17 +22,19 @@
 
     .mobile-title {
         display: block;
-        font-size: 1.35rem;
+        text-transform: lowercase;
+        font-size: 1.55rem;
         text-align: center;
         width: 100%;
+        margin: 0 auto;
     }
 
     /* RECENT */
 
     .recent {
         text-align: center;
-        align-content: center;
         width: 100%;
+        margin: 0 auto;
     }
 
     .recent h1 {
@@ -40,15 +42,16 @@
     }
 
     .recent ul {
-        display: flex;
+        display: grid;
         padding: 0;
+        width: 75%;
+        margin: 0 auto;
     }
 
     .recent ul li {
         text-decoration: none;
         list-style: none;
         text-align: center;
-        display: inline-block;
         width: 100%;
 
     }
@@ -82,6 +85,12 @@
     .news .blurb {
         font-size: .35rem;
     }
+
+    .blurb img {
+        width: 200px;
+        border: 1px solid var(--dark-grey);
+    }
+
 
     /* GENERAL RULES */
     .mobile-hide {
