@@ -7,7 +7,7 @@
 * CSS
 * JavaScript
 
-## Design:
+### Design:
 * Adobe XD
 * Photoshop
 
