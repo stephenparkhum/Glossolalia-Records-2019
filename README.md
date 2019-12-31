@@ -5,7 +5,7 @@
 ### Tech Stack:
 * HTML
 * CSS
-* JavaScript
+* JavaScript / jQuery
 
 ### Design:
 * Adobe XD
