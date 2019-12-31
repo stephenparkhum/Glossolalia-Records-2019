@@ -7,7 +7,22 @@
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+
+
+    .main_content {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .main_in_wrapper {
+        width: 100%;
+    }
     
+    .right_ {
+        display: none;
+    }
+
     /* NAVIGATION */
     .side_nav {
         display: none;
@@ -76,10 +91,14 @@
 
     /* NEWS */
     .news h2 {
-        letter-spacing: 1px;
+        letter-spacing: 5px;
         padding: 0 0;
         margin: 0;
-        font-size: 1.15rem;
+        font-size: 1.35rem;
+    }
+
+    .news {
+        width: 100%;
     }
     
     .news .blurb {
@@ -89,6 +108,11 @@
     .blurb img {
         width: 200px;
         border: 1px solid var(--dark-grey);
+    }
+
+    .blurb {
+        border-bottom: 1px solid var(--dark-grey);
+        margin-bottom: 20px;
     }
 
 
