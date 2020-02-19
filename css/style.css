@@ -186,6 +186,7 @@ body h1 {
     letter-spacing: 2px;
     padding: 0 0;
     margin: 0;
+    font-size: 22px;
 }
 
 .news .date {
@@ -206,6 +207,14 @@ body h1 {
 .blurb {
     border-bottom: 1px solid white;
     margin-bottom: 25px;
+}
+
+.thirty {
+    margin-bottom: 25px;
+}
+
+.thirty iframe {
+    margin-top: 30px;
 }
 
 
